@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+}
+.card-container{
+  width: 250px;
+  height: 370px;
+  background-color: hsl(31, 77%, 52%);
+}
+#card-1{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.sedan{
+  position: relative;
+  left:18%;
+  top: 10%;
+  cursor: pointer;
+  transition: left 1s;
+}
+.sedan:hover{
+  left: 25%;
+}
+h4{
+  color: white;
+  font-size: 22px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.description{
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  margin-left: 50px;
+  margin-top: 16px;
+  margin-right: 50px;
+}
+.learn-more{
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 1em 2em;
+  font-size: 14px;
+  border-radius: 50px;
+  color: hsl(31, 77%, 52%);
+  cursor: pointer;
+}
+.learn-more:active{
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 1px solid white;
+}
+
+#card-2{
+  background-color: hsl(184, 100%, 22%);
+}
+#button-2{
+  color: hsl(184, 100%, 22%);
+}
+#button-2:active{
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+#card-3{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+#button-3{
+  color: hsl(179, 100%, 13%);
+}
+#button-3:active{
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+footer{
+  margin-top: 14px;
+  text-align: center;
+}
+/* media query */
+@media only screen and (max-width:640px) {
+  body{
+    height: 170vh;
+  }
+  .card-container{
+    min-width: 50vw;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .container{
+    display: flex;
+  }
+  .card-container{
+    min-width: 24vw;
+  }
+
+#card-1{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 12px;
+}
+#card-3{
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+}
